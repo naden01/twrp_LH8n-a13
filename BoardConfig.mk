@@ -10,18 +10,6 @@ DEVICE_PATH := device/tecno/LH8n
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
-# A/B
-AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS += \
-    vendor \
-    system \
-    boot \
-    vbmeta_system \
-    product \
-    vbmeta_vendor \
-    system_ext
-BOARD_USES_RECOVERY_AS_BOOT := true
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -112,6 +100,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_USES_METADATA_PARTITION := true
+BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
