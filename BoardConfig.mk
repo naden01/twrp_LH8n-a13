@@ -112,6 +112,7 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_ROOT_EXTRA_FOLDERS += metadata
 
+# Hack: prevent anti rollback
 # Encryption
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
@@ -121,6 +122,16 @@ PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 PLATFORM_SECURITY_PATCH := 2099-12-31
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 VENDOR_SECURITY_PATCH := 2099-12-31
+# Properties
+
+TARGET_RECOVERY_DEVICE_MODULES += \
+    libkeymaster4 \
+    libpuresoftkeymasterdevice \
+    
+
+RECOVERY_LIBRARY_SOURCE_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
