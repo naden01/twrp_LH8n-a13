@@ -123,16 +123,20 @@ PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 PLATFORM_SECURITY_PATCH := 2099-12-31
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 VENDOR_SECURITY_PATCH := 2099-12-31
-# Properties
 
+# Additional Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
+    android.hardware.keymaster@4.1 \
     libkeymaster4 \
-    libpuresoftkeymasterdevice \
-    
+    libkeymaster41 \
+    libpuresoftkeymasterdevice
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.keymaster@4.1 \
     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
+
 
 # Verified Boot
 BOARD_AVB_ENABLE := true

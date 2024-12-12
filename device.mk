@@ -63,6 +63,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     mtk_plpath_utils \
     mtk_plpath_utils.recovery
+	
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
