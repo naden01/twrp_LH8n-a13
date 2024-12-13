@@ -105,9 +105,6 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
-# Treble
-BOARD_VNDK_VERSION := current
-
 # System as root
 BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_HAS_NO_SELECT_BUTTON := true
