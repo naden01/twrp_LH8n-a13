@@ -1,6 +1,9 @@
 # Fstab
 ro.postinstall.fstab.prefix=/system
 
+# Dynamic Partitions
+ro.boot.dynamic_partitions=true
+
 # USB MTP
 ro.sys.usb.storage.type=mtp
 
