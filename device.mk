@@ -13,17 +13,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # A/B
 AB_OTA_PARTITIONS += \
-    boot \
-    dtbo \
-    lk \
-    preloader \
-    product \
-    system \
     system_ext \
-    vbmeta \
+    vendor \
+    system \
+    boot \
     vbmeta_system \
-    vbmeta_vendor \
-    vendor
+    product \
+    vbmeta_vendor
     
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -31,15 +27,18 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
-PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client
-
 PRODUCT_PACKAGES += \
     otapreopt_script \
-    cppreopts.sh \
+    cppreopts.sh
+
+# Update engine
+PRODUCT_PACKAGES += \
     update_engine \
-    update_verifier \
-    update_engine_sideload
+    update_engine_sideload \
+    update_verifier
+
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
@@ -67,6 +66,16 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1
+
+# Keystore Hal
+PRODUCT_PACKAGES += \
+    android.system.keystore2
+
+# Security
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint \
+    android.hardware.security.secureclock \
+    android.hardware.security.sharedsecret
 	
 # Hidl Service
 PRODUCT_ENFORCE_VINTF_MANIFEST := true
