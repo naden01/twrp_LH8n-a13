@@ -58,11 +58,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
-
-# Mtk plpath utils
-PRODUCT_PACKAGES += \
-    mtk_plpath_utils \
-    mtk_plpath_utils.recovery
 	
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -73,6 +68,10 @@ PRODUCT_ENFORCE_VINTF_MANIFEST := true
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# API
+PRODUCT_SHIPPING_API_LEVEL := 31
+PRODUCT_TARGET_VNDK_VERSION := 31
 
 # Additional Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
