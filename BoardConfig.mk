@@ -104,7 +104,7 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 # system.prop
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
-$ fstab
+# fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
 # System as root
