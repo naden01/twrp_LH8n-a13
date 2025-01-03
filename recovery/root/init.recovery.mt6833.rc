@@ -119,4 +119,6 @@ on post-fs-data
     mkdir /data/vendor_de/0/cryptoeng 0770 system system
 
     start health-hal-2-1
-    setprop sys.usb.config adb
+    setprop sys.usb.config mtp,adb
+    setprop sys.usb.state mtp,adb
+    setprop persist.sys.usb.config mtp,adb 
