@@ -7,19 +7,27 @@
 
 LOCAL_PATH := device/tecno/LH8n
 
-# Virtual A/B OTA
-AB_OTA_UPDATER := true
+# Enable Virtual A/B OTA
+ENABLE_VIRTUAL_AB := true
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # A/B
+AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     boot \
     dtbo \
+    gz \
     lk \
+    logo \
+    md1img \
     preloader \
     product \
+    scp \
+    spmfw \
+    sspm \
     system \
     system_ext \
+    tee \
     vbmeta \
     vbmeta_system \
     vbmeta_vendor \
