@@ -86,4 +86,3 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     android.hardware.keymaster@4.1 \
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.keymaster@4.1 \
