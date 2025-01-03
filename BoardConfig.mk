@@ -204,9 +204,6 @@ TW_DEVICE_VERSION := Naze | LH8n >a13<
 # prevent always stuck on recovery when rebooting to system
 TW_NO_FASTBOOT_BOOT := true
 
-# recovery
-TW_HAS_NO_RECOVERY_PARTITION := true
-
 # StatusBar
 TW_STATUS_ICONS_ALIGN := center
 TW_CUSTOM_CPU_POS := "300"
