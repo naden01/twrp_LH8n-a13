@@ -174,15 +174,20 @@ TW_BRIGHTNESS_PATH    := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS     := 2047
 TW_DEFAULT_BRIGHTNESS := 1200
 
-# Excludes
-TW_EXCLUDE_TWRPAPP := true
-TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_EXCLUDE_APEX := true
+# EXclude feature for more space boot ramdisk
+TW_EXCLUDE_MTP := true
+TW_EXLUDE_TZDATA := true
+TW_EXCLUDE_LPDUMP := true
+TW_EXCLUDE_FB2PNG := true
 TW_EXCLUDE_SUPERSU := true
-TW_EXCLUDE_NANO := true
-TW_EXCLUDE_PYTHON := true
-TW_EXCLUDE_TZDATA := true
 TW_EXCLUDE_NTFS_3G := true
+TW_EXTRA_LANGUAGES := false
+TW_EXCLUDE_APEX := true
+TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_EXCLUDE_NANO := true
+TW_EXCLUDE_APEX := true
+TW_EXCLUDE_TWRPAPP := true
+TW_EXCLUDE_PYTHON := true
 
 # Include
 TW_INCLUDE_REPACKTOOLS := true
