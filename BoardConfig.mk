@@ -39,7 +39,6 @@ TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
 # Kernel
-# Kernel
 BOARD_KERNEL_CMDLINE              := bootopt=64S3,32N2,64N2
 TARGET_PREBUILT_KERNEL            := $(DEVICE_PATH)/prebuilt/kernel
 TARGET_PREBUILT_DTB               := $(DEVICE_PATH)/prebuilt/dtb.img
