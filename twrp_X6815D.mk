@@ -15,7 +15,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit some common twrp stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from TECNO-LH8n device
+# Inherit from INFINIX-X6815D device
 $(call inherit-product, device/infinix/X6815D/device.mk)
 
 PRODUCT_DEVICE := X6815D
