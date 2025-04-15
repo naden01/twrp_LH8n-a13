@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/tecno/LH8n
+DEVICE_PATH := device/infinix/X6815D
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -31,10 +31,10 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 #DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := TECNO-LH8n
+TARGET_OTA_ASSERT_DEVICE := INFINIX-X6815D
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := CY-LH8N-H333
+TARGET_BOOTLOADER_BOARD_NAME := CY-X6815D-H333
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
@@ -98,7 +98,7 @@ TARGET_COPY_OUT_SYSTEM_EXT              := system_ext
 TARGET_COPY_OUT_VENDOR                  := vendor
 
 # Platform
-TARGET_BOARD_PLATFORM := mt6833
+TARGET_BOARD_PLATFORM := mt6877
 
 # Recovery
 TARGET_NO_RECOVERY := true
@@ -197,7 +197,7 @@ TARGET_USES_LOGD := true
 TW_NEVER_UNMOUNT_SYSTEM := true
 
 # Version
-TW_DEVICE_VERSION := Naze | LH8n >a13<
+TW_DEVICE_VERSION := TegarXLu | X6815D >a13<
 
 # prevent always stuck on recovery when rebooting to system
 TW_NO_FASTBOOT_BOOT := true
@@ -212,8 +212,8 @@ TW_CUSTOM_CLOCK_POS := "70"
 TW_CUSTOM_BATTERY_POS := "790"
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_LH8n
-TARGET_RECOVERY_DEVICE_MODULES := libinit_LH8n
+TARGET_INIT_VENDOR_LIB := libinit_X6815D
+TARGET_RECOVERY_DEVICE_MODULES := libinit_X6815D
 
 # PBRP flags
 PB_DISABLE_DEFAULT_DM_VERITY := true
