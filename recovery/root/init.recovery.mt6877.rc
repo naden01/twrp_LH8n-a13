@@ -14,8 +14,8 @@ on fs && property:ro.debuggable=0
 
 on fs
     install_keyring
-    wait /dev/block/platform/soc/11270000.ufshci
-    symlink /dev/block/platform/soc/11270000.ufshci /dev/block/bootdevice
+    wait /dev/block/platform/11270000.ufshci
+    symlink /dev/block/platform/11270000.ufshci /dev/block/bootdevice
 
 # We need vold early for metadata encryption
 on early-fs
@@ -23,7 +23,7 @@ on early-fs
 
 on late-fs
     # Mount RW partitions which need run fsck
-    mount_all /first_stage_ramdisk/fstab.mt6833 --late
+    mount_all /first_stage_ramdisk/fstab.mt6877 --late
 
 on post-fs
     start boot-hal-1-2
