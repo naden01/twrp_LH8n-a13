@@ -1,4 +1,4 @@
-kloooi# Android device tree for TECNO pova 5 pro (LH8n)
+kloooi# Android device tree for INFINIX ZERO 5G (X6815D)
 
 ```
 #
