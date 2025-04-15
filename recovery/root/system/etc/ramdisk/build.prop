@@ -1,0 +1,22 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.bootimage.brand=TegarXLu
+ro.product.bootimage.device=X6815D
+ro.product.bootimage.manufacturer=infinix
+ro.product.bootimage.model=| Infinix ZERO 5G
+ro.product.bootimage.name=twrp_X6815D
+ro.bootimage.build.date=Sat Apr 12 04:09:22 UTC 2025
+ro.bootimage.build.date.utc=1744430962
+ro.bootimage.build.fingerprint=TegarXLu/twrp_X6815D/X6815D:16.1.0/SD2A.220601.004.B2/runner04120409:eng/test-keys
+ro.bootimage.build.id=SD2A.220601.004.B2
+ro.bootimage.build.tags=test-keys
+ro.bootimage.build.type=eng
+ro.bootimage.build.version.incremental=eng.runner.20250412.041230
+ro.bootimage.build.version.release=16.1.0
+ro.bootimage.build.version.release_or_codename=16.1.0
+ro.bootimage.build.version.sdk=32
+# Auto-added by post_process_props.py
+persist.sys.usb.config=none
+# end of file
