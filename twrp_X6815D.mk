@@ -16,12 +16,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from TECNO-LH8n device
-$(call inherit-product, device/tecno/LH8n/device.mk)
+$(call inherit-product, device/infinix/X6815D/device.mk)
 
-PRODUCT_DEVICE := LH8n
-PRODUCT_NAME := twrp_LH8n
-PRODUCT_BRAND := TECNO
-PRODUCT_MODEL := TECNO LH8n
-PRODUCT_MANUFACTURER := tecno
+PRODUCT_DEVICE := X6815D
+PRODUCT_NAME := twrp_X6815D
+PRODUCT_BRAND := TegarXLu
+PRODUCT_MODEL := | INFINIX X6815D
+PRODUCT_MANUFACTURER := infinix
 
-PRODUCT_GMS_CLIENTID_BASE := android-tecno
+PRODUCT_GMS_CLIENTID_BASE := android-infinix
