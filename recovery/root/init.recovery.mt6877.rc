@@ -23,6 +23,7 @@ on early-fs
 
 on late-fs
     # Mount RW partitions which need run fsck
+    mount_all /first_stage_ramdisk/fstab.emmc --late
     mount_all /first_stage_ramdisk/fstab.mt6877 --late
 
 on post-fs
