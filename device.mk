@@ -57,6 +57,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl.mt6877
 
+PRODUCT_COPY_FILES += \
+    device/Infinix/X6815D/system.prop:system/build.prop
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
