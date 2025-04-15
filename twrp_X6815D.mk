@@ -18,6 +18,10 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from INFINIX-X6815D device
 $(call inherit-product, device/Infinix/X6815D/device.mk)
 
+# copy system.prop ke build.prop di system image
+PRODUCT_COPY_FILES += \
+    device/Infinix/X6815D/system.prop:system/build.prop
+
 PRODUCT_DEVICE := X6815D
 PRODUCT_NAME := twrp_X6815D
 PRODUCT_BRAND := TegarXLu
