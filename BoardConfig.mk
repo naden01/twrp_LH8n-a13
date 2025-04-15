@@ -189,6 +189,10 @@ TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_RESETPROP    := true
 
+#tweaks
+TW_HAS_MTP                 := true
+TW_NO_FLASH_CURRENT_TWRP   := true
+
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
@@ -214,3 +218,15 @@ TW_CUSTOM_BATTERY_POS := "790"
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_X6815D
 TARGET_RECOVERY_DEVICE_MODULES := libinit_X6815D
+
+# PBRP flags
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_DISABLE_DEFAULT_PATCH_AVB2 := true
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
+
+# Torch
+PB_TORCH_PATH := "/sys/devices/platform/torch/torch_level"
+PB_TORCH_MAX_BRIGHTNESS  := 1
+
+# Maintener
+PB_DEVICE_MAINTAINER := TegarXLu
