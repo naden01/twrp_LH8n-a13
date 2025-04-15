@@ -1,6 +1,6 @@
 
 cc_library_static {
-    name: "libinit_LH8n",
+    name: "libinit_X6815D",
     header_libs: [
         "libbase_headers",
     ],
@@ -10,6 +10,6 @@ cc_library_static {
     static_libs: [
         "libbase",
     ],
-    srcs: ["init_LH8n.cpp"],
+    srcs: ["init_X6815D.cpp"],
     recovery_available: true,
 }
