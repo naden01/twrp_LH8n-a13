@@ -1,18 +1,13 @@
-# Fstab
-ro.postinstall.fstab.prefix=/system
-
-# USB MTP
-ro.sys.usb.storage.type=mtp
-
-# Crypto
-ro.crypto.volume.filenames_mode=aes-256-cts
-
-# TEE
-ro.vendor.mtk_tee_gp_support=1
-ro.vendor.mtk_trustonic_tee_support=1
-
-# Gatekeeper
+ro.mediatek.platform=MT6877
+ro.hardware=mt6877
 ro.hardware.gatekeeper=trustonic
-
-# Keymaster
-keymaster_ver=4.1
+ro.hardware.kmsetkey=trustonic
+ro.mtk_trustonic_tee_support=1
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.sys.usb.storage.type=mtp
+ro.crypto.metadata.enabled=true
+ro.crypto.support_metadata_encrypt=true
+ro.crypto.uses_fs_ioc_add_encryption_key=true
+ro.sys.usb.mtp.whql.enable=0
+ro.treble.enabled=true
+ro.vendor.mtk_trustonic_tee_support=1
