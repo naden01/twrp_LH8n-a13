@@ -201,7 +201,7 @@ TARGET_USES_LOGD := true
 TW_NEVER_UNMOUNT_SYSTEM := true
 
 # Version
-TW_DEVICE_VERSION := TegarXLu | X6815D >13<
+TW_DEVICE_VERSION := TegarXLu | X6815D >A13<
 
 # prevent always stuck on recovery when rebooting to system
 TW_NO_FASTBOOT_BOOT := true
