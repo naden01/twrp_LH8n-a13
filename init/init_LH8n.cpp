@@ -24,11 +24,11 @@ void vendor_load_properties()
     string prop_partitions[] = {"", "vendor.", "odm."};
     for (const string &prop : prop_partitions)
     {
-        property_override(string("ro.product.") + prop + string("brand"), "TECNO");
-        property_override(string("ro.product.") + prop + string("name"), "LH8n-GL");
-        property_override(string("ro.product.") + prop + string("device"), "TECNO-LH8n");
-        property_override(string("ro.product.") + prop + string("model"), "TECNO LH8n");
-        property_override(string("ro.product.") + prop + string("marketname"), "TECNO POVA 5 Pro 5G");
-        property_override(string("ro.product.system.") + prop + string("device"), "TECNO POVA 5 Pro 5G");
+        property_override(string("ro.product.") + prop + string("brand"), "INFINIX");
+        property_override(string("ro.product.") + prop + string("name"), "X6815D-OP");
+        property_override(string("ro.product.") + prop + string("device"), "INFINIX-X6815D");
+        property_override(string("ro.product.") + prop + string("model"), "INFINIX X6815D");
+        property_override(string("ro.product.") + prop + string("marketname"), "TegarXLu | Infinix Zero 5G");
+        property_override(string("ro.product.system.") + prop + string("device"), "TegarXLu | INFINIX ZERO 5G");
     }
 }
