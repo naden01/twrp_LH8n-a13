@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/Infinix/X6815D
+LOCAL_PATH := device/tecno/LH8n
 
 # Enable Virtual A/B OTA
 ENABLE_VIRTUAL_AB := true
@@ -55,10 +55,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl
 
 PRODUCT_PACKAGES_DEBUG += \
-    bootctrl.mt6877
-
-PRODUCT_COPY_FILES += \
-    device/Infinix/X6815D/system.prop:system/build.prop
+    bootctrl.mt6833
 
 # Fastbootd
 PRODUCT_PACKAGES += \
