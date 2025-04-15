@@ -26,8 +26,8 @@ void vendor_load_properties()
     {
         property_override(string("ro.product.") + prop + string("brand"), "TegarXLu");
         property_override(string("ro.product.") + prop + string("name"), "X6815D-OP");
-        property_override(string("ro.product.") + prop + string("device"), "INFINIX-X6815D");
-        property_override(string("ro.product.") + prop + string("model"), "INFINIX X6815D");
+        property_override(string("ro.product.") + prop + string("device"), "| Infinix Zero 5G");
+        property_override(string("ro.product.") + prop + string("model"), "X6815D");
         property_override(string("ro.product.") + prop + string("marketname"), "TegarXLu | Infinix Zero 5G");
         property_override(string("ro.product.system.") + prop + string("device"), "TegarXLu | INFINIX ZERO 5G");
     }
