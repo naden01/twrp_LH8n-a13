@@ -7,6 +7,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_LH8n.mk
-
-COMMON_LUNCH_CHOICES := \
-    twrp_LH8n-eng
